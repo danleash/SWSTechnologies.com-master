@@ -1,0 +1,90 @@
+﻿@model TestimonyViewModel
+
+@{
+    ViewData["Title"] = "Testimonials";
+}
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="~/css/StyleSheet.css" rel="stylesheet" />
+
+    </head>
+<body>
+    <div class="intro">
+        <div class="inners">
+            <h1 class="text-center padding">TELL US YOUR STORY</h1>
+            <div class="form">
+                <form asp-action="Testimonials">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <input asp-for="TestimonyModel.Name" placeholder="name" class="form-control" />
+                        <span asp-validation-for="TestimonyModel.Name" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input asp-for="TestimonyModel.Company" placeholder="company name" class="form-control" />
+                        <span asp-validation-for="TestimonyModel.Company" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="TestimonyModel.Message" placeholder="testimony" cols="25" rows="5"></textarea>
+                        <span asp-validation-for="TestimonyModel.Message" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <section id="home-reviews" class="padding">
+        <div class="col-sm-10 ml-auto mr-auto text-center">
+            <h2 class="">Read what some of our customers are saying</h2>
+            <hr />
+           
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                       @{var first = true;
+                        }
+                        @foreach (var item in Model.TestimonyModels)
+                        {
+                            <div class="carousel-item @(first?Html.Raw("active"):Html.Raw(""))">
+                                <p class="review-body" style="align-content:center; text-align: center;">
+
+                                    <i class="fas fa-quote-left" style="padding-right: 10px;"></i>@Html.DisplayFor(modelItem => item.Message)<i class="fas fa-quote-right" style="padding-left: 10px;"></i>
+                                </p>
+                                <p class="review-name" style="align-content:center; text-align: center;">@Html.DisplayFor(modelItem => item.Company) - @Html.DisplayFor(modelItem => item.Name)</p>
+
+                            </div>
+                            first = false;
+                            continue;
+                        }
+
+                        </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

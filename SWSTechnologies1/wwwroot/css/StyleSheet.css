@@ -1,0 +1,108 @@
+﻿@import "https://fonts.googleapis.com/css?family=Montserrat&display=swap";
+@import "https://fonts.googleapis.com/css?family=Univers57-Condensed"; 
+body {
+    height:100%;
+    width:100%;
+    
+}
+.intro {
+    background: url('theone.jpg') no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+    .intro .inners {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        width: 100%;
+        max-width: none;
+    }
+    .intro h1 {
+        font-family: 'Raleway', sans-serif;
+        color: #F9F3F4;
+        text-shadow: 0px 0px 300px #000;
+        font-size: 500%;
+    }
+
+.your-testimony{
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+}
+.form{
+    position: relative;
+    z-index: 1;
+    background: rgba(105, 105, 105, 0.8);
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    border-radius: 5px;
+    text-align:center;
+}
+.form-group input{
+    font-family: "Montserrat", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+}
+    .form-group textarea {
+        font-family: "Montserrat", sans-serif;
+        outline: 0;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+
+    .form-group button {
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background: #DCDCDC;
+        width: 100%;
+        border: 0;
+        border-radius: 5px;
+        padding: 15px;
+        color: #000000;
+        font-size: 14px;
+        cursor: pointer;
+    }
+section#home-reviews {
+    margin: 50px 6px 70px 6px;
+    padding: 100px 0;
+    font-family: "Univers57-Condensed", sans-serif;
+    color: #5d564f;
+
+    background: #f7f7f7;
+}
+
+    section#home-reviews h2 {
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+
+
+section#home-reviews p {
+    font-size: 13pt;
+}
+
+
+
+
+
+

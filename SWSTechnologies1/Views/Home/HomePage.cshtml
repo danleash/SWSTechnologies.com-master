@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+@{
+    ViewData["Title"] = "HomePage";
+} 
+
+<head>
+    <title>HomePage</title>
+    <link href="~/css/landing.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="intros">
+        <div class="inner">
+            <div class="content" style="padding: 200px 0;">
+                <h1>SWS Technologies</h1>
+                <a class="btn btn-default" asp-for="" asp-controller="Home" asp-action="Index">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="padding">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="~/css/Luke.jpg" />
+                </div>
+                <div class="col-sm-6 text-center">
+                    <h1>Hi, I'm Luke.</h1>
+                    <p class="lead">My sole mission is to scale your business to remain competetive in this increasingly technological world.</p>
+                    <p class="lead">An interactive kiosk is a computer terminal featuring specialized hardware and software that provides access to information and applications for communication, commerce, entertainment, or education. Want to know more?</p>
+                    <a id="btn-contact" asp-for="" asp-controller="Contact" asp-action="Create">Ask me a question</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fixed">
+
+    </div>
+    <div class="padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"style="text-align:center; ">
+                    <h4>What we do.</h4>
+                    <hr />
+                    <p style="padding-bottom: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a id="btn-contact" asp-for="" asp-controller="Home" asp-action="About">About</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"style="text-align:center;">
+                    <h4>Reach out to us!</h4>
+                    <hr />
+                    <p style="padding-bottom: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a id="btn-contact" asp-for="" asp-controller="Contact" asp-action="Create">Contact</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="text-align:center; ">
+                    <h4>What other's say about us.</h4>
+                    <hr />
+                    <p style="padding-bottom: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a id="btn-contact" asp-controller="Testimony" asp-action="Testimonials">Reviews</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr />
+</body>
+
+</html>

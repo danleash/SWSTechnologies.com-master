@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <StartupObject></StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="obj\**" />
+    <Content Remove="obj\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\ContactClientForm.cshtml" />
+  </ItemGroup>
+  
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome" Version="4.7.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.6.1" />
+  </ItemGroup>
+  
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+  
+
+  <ItemGroup>
+    <None Include="wwwroot\css\webfonts\fa-brands-400.eot" />
+    <None Include="wwwroot\css\webfonts\fa-brands-400.svg" />
+    <None Include="wwwroot\css\webfonts\fa-brands-400.ttf" />
+    <None Include="wwwroot\css\webfonts\fa-brands-400.woff" />
+    <None Include="wwwroot\css\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\css\webfonts\fa-regular-400.eot" />
+    <None Include="wwwroot\css\webfonts\fa-regular-400.svg" />
+    <None Include="wwwroot\css\webfonts\fa-regular-400.ttf" />
+    <None Include="wwwroot\css\webfonts\fa-regular-400.woff" />
+    <None Include="wwwroot\css\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\css\webfonts\fa-solid-900.eot" />
+    <None Include="wwwroot\css\webfonts\fa-solid-900.svg" />
+    <None Include="wwwroot\css\webfonts\fa-solid-900.ttf" />
+    <None Include="wwwroot\css\webfonts\fa-solid-900.woff" />
+    <None Include="wwwroot\css\webfonts\fa-solid-900.woff2" />
+  </ItemGroup>
+
+</Project>
